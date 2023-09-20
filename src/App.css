@@ -1,0 +1,82 @@
+.card_user{
+    width: 100%;
+    width: 350px;
+    border: 2px #BCBCBC solid;
+    border-radius: 5px;
+    padding: 15px 15px 10px 15px;
+}
+.card_user>h3{
+    margin-top: 0;
+}
+.bx-trash,
+.bx-pencil{
+    color: white;
+    font-size: 25px;
+}
+.botones>button{
+    width: 40px;
+    aspect-ratio: 1;
+    background-color: #C91B70;
+    border-radius: 3px;
+}
+.botones{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+    align-items: center;
+}
+.plantilla{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 80vw;
+    justify-content: center;
+}
+.everyone{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+.title{
+    width: 100%;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.title>button{
+    width: 200px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 5px;
+}
+.bx-user-plus{
+    font-size: 20px;
+}
+.formuser_main{
+    display: flex;
+    align-items: center;
+    height: 35px;
+    background-color: #C91B70;
+    color: white;
+    font-size: large;
+}
+.title>h1{
+    font-size: 50px;
+}
+.card_atribute{
+    color:#BCBCBC;
+}
+.bx-x{
+    font-size: 30px;
+    color: #C91B70;
+}
