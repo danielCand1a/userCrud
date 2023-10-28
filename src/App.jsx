@@ -6,7 +6,7 @@ import UserCard from './components/UserCard'
 
 function App() {
   const [infoUpdate, setInfoUpdate] = useState()
-  const baseUrl = 'https://users-crud.academlo.tech'
+  const baseUrl = 'https://usersfrombackend-dev-adpg.3.us-1.fl0.io'
   const [closeForm, setCloseForm] = useState(true)
   const[ users, getUsers, createUser, deleteUser, updateUser] = useFetch(baseUrl, setCloseForm)
   
