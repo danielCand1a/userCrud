@@ -1,7 +1,7 @@
 import axios from "axios"
 import { useState } from "react"
 
-const useFetch = (baseUrl, callback) => {
+const useFetch = (baseUrl ,callback) => {
    const [infoApi, setInfoApi] = useState()
 
    //READ

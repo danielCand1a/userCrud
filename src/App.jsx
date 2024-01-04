@@ -6,19 +6,16 @@ import UserCard from './components/UserCard'
 
 function App() {
   const [infoUpdate, setInfoUpdate] = useState()
-  const baseUrl = 'https://usersfrombackend-dev-adpg.3.us-1.fl0.io'
+  const baseUrl = 'https://users-crud.academlo.tech'
   const [closeForm, setCloseForm] = useState(true)
   const[ users, getUsers, createUser, deleteUser, updateUser] = useFetch(baseUrl, setCloseForm)
   
   useEffect(()=>{
     getUsers('/users')
   },[])
-  console.log(users);
   const handleOpenForm = () =>{
     setCloseForm(false)
   }
-
-
   return (
     <div className='everyone'>
       <div className='title'>

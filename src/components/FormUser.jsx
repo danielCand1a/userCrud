@@ -4,7 +4,7 @@ import './styles/FormUser.css'
 
 const FormUser = ({createUser,infoUpdate,updateUser,setInfoUpdate,closeForm,setCloseForm})=> {
 
-  const {handleSubmit, register, reset}= useForm()
+  const {handleSubmit, register, reset} = useForm()
 
   useEffect(() =>{
     reset(infoUpdate)
@@ -33,8 +33,8 @@ const FormUser = ({createUser,infoUpdate,updateUser,setInfoUpdate,closeForm,setC
 
   return (  
   <div onClick={handleCloseForm} className={`formuser_container ${closeForm && 'close-form'}`}>
-    <form onClick={e=>e.stopPropagation()}className="formuser" onSubmit={handleSubmit(submit)}>
-      <h2 className="formuser_title">{infoUpdate ? 'Update': "New User"}</h2>
+    <form onClick={e=>e.stopPropagation()} className="formuser" onSubmit={handleSubmit(submit)}>
+      <h2 className="formuser_title">{infoUpdate? 'Update': "New User"}</h2>
       <div onClick={handleCloseForm} className="formuser_close"><i className='bx bx-x'></i></div>
       <div className="formuser_group">
         <label className="formuser_label" htmlFor="email">Email</label>
@@ -56,7 +56,7 @@ const FormUser = ({createUser,infoUpdate,updateUser,setInfoUpdate,closeForm,setC
         <label className="formuser_label" htmlFor="birthday">Birthday</label>
         <input className="formuser_input" {...register('birthday')}type="date" id="birthday" />
       </div>
-      <button className="formuser_btn">{infoUpdate? 'Upadate': 'Create'}</button>
+      <button className="formuser_btn">{infoUpdate? 'Update': 'Create'}</button>
     </form>
   </div>
     
